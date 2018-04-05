@@ -1,19 +1,19 @@
 <template>
   <div>
-    <input type="text" name="form.field.extra_questions" v-bind:value="vv">
+    <input type="hidden" name="form.field.extra_questions" v-bind:value="vv">
 
-    <table class="table">
+    <table class="table table-striped table-bordered">
       <tr>
           <th>Frage</th>
           <th>Typ</th>
       <th>Antwort(en)</th>
-      <th>action</th>
+      <th></th>
       </tr>
       <tr v-for="q in questions" :key="q.question">
         <td>{{q.question}}</td>
         <td>{{q.type}}</td>
     <td> <ul v-for="a in q.answers" :key="a.value"> <li>{{a.value}}</li> </ul> </td>
-    <td><a v-on:click="delete_question(q)">delete</a></td>
+    <td><a v-on:click="delete_question(q)">löschen</a></td>
       </tr>
     </table>
 
