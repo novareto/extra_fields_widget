@@ -17,11 +17,11 @@
       </tr>
     </table>
 
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#extra_fields_widget">
       Zusatzfragen hinzufügen
     </button>
 
-    <div class="modal fade" tabindex="-1" role="dialog" id="myModal" :class="{ in: modalShown }">
+    <div class="modal fade" tabindex="-1" role="dialog" id="extra_fields_widget" :class="{ in: modalShown }">
       <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
